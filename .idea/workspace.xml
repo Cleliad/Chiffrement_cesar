@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="1ère version code: travail commun en classe">
+      <change afterPath="$PROJECT_DIR$/brouillon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chiffrement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chiffrement.py" afterDir="false" />
     </list>
@@ -24,21 +24,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Cleliad"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Cleliad&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Cleliad/Chiffrement_cesar.git",
-    "accountId": "5b24cb1a-e22c-4343-9410-7a870d6421d8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Cleliad/Chiffrement_cesar.git&quot;,
+    &quot;accountId&quot;: &quot;5b24cb1a-e22c-4343-9410-7a870d6421d8&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2gpkzGfbF1AGrWnXjV6pDvcxrpi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,8 +48,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Chiffrement.executor": "Run",
+    "Python.Jeu_du_pendu_Clélia_Durandet (1).executor": "Run",
+    "Python.brouillon.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Clélia/Downloads/Jeu_du_pendu_Clélia_Durandet (1).py",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -68,6 +72,19 @@
       <option name="presentableId" value="Default" />
       <updated>1716402167066</updated>
     </task>
+    <task id="LOCAL-00001" summary="1ère version code: travail commun en classe">
+      <option name="closed" value="true" />
+      <created>1716410242930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716410242930</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1ère version code: travail commun en classe" />
+    <option name="LAST_COMMIT_MESSAGE" value="1ère version code: travail commun en classe" />
   </component>
 </project>
