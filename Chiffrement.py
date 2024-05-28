@@ -62,9 +62,30 @@ def traiter_resultat_fichier(liste):
     fichier_creer.close()
 
 
-# FONCTION 6: DECRYPTAGE SANS CLE
+# FONCTION 6: PASSER LE DICTIONNAIRE EN LISTE DE MOTS
+def passer_dictionnaire_en_liste():
+    with open('dictionnaire_francais.txt', "r", encoding='utf-8') as text_file:
+        lines = text_file.read().split()
+    return lines
 
-# a faire utilisation du dictionnaire français
+
+# FONCTION 7: DECRYPTAGE SANS CLE (méthode brute_force)
+def decrypter_sans_cle(liste_caracteres, liste_dictionnaire):
+    print("Nous allons tenté de déchiffrer votre message. Cette procédure peut prendre quelques instants.")
+    cle_test = 1
+    while cle_test < 27:
+        print(liste_caracteres)
+        liste_decallee = decaller_lettres(liste_caracteres, 1)
+        print(liste_decallee)
+        liste_mots_decallee = ''.join(map(str, liste_decallee)).split(' ')
+        for mot in liste_mots_decallee:
+            if len(mot) > 3:
+                for mot_dictionnaire in liste_dictionnaire:
+                    if mot_dictionnaire == mot:
+                        return cle_test
+            print(mot)
+        cle_test += 1
+        print(cle_test)
 
 
 # FONCTION PRINCIPALE
@@ -102,8 +123,12 @@ def chiffrer():
             liste_decallee = decaller_lettres(liste_caracteres, cle)
 
         # Décryptage sans clé
-        else:
-            print('programme pas encore codé')
+        if choix_cle == 'non':
+            liste_dictionnaire = passer_dictionnaire_en_liste()
+            cle = decrypter_sans_cle(liste_caracteres, liste_dictionnaire)
+            liste_decallee = decaller_lettres(liste_caracteres, 0)
+            texte = traiter_resultat_console(liste_decallee)
+            print(texte)
 
     # Résultat fourni selon la forme initiale choisie
     # Fichier

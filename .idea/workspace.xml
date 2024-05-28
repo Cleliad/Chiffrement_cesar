@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="Correctif mineur (suppression d'assignation de variable globale &quot;liste_decallee&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/Chiffrement_cesar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chiffrement_cesar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="Création de la branche pour la fonction brute_force (travail avec Baptiste)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chiffrement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chiffrement.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,10 +119,33 @@
       <option name="project" value="LOCAL" />
       <updated>1716865266785</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Création de la branche pour la fonction brute_force (travail avec Baptiste)">
+      <option name="closed" value="true" />
+      <created>1716932856868</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716932856868</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -140,6 +162,7 @@
     <MESSAGE value="Mise au format PEP8" />
     <MESSAGE value="Correctif mineurs" />
     <MESSAGE value="Correctif mineur (suppression d'assignation de variable globale &quot;liste_decallee&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correctif mineur (suppression d'assignation de variable globale &quot;liste_decallee&quot;" />
+    <MESSAGE value="Création de la branche pour la fonction brute_force (travail avec Baptiste)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Création de la branche pour la fonction brute_force (travail avec Baptiste)" />
   </component>
 </project>
