@@ -70,7 +70,8 @@ def traiter_resultat_fichier(liste):
 # FONCTION PRINCIPALE
 def chiffrer():
     # Initialisation
-    print('Tu t''appretes à utiliser un code de chiffrement basé sur la méthode de César')
+    global liste_decallee
+    print("Tu t'appretes à utiliser un code de chiffrement basé sur la méthode de César")
     choix_forme = int(input('Veux-tu utiliser un fichier (tape 0) ou écrire le message dans la console (tape 1): '))
 
     # Choix de la forme du texte:
@@ -107,7 +108,7 @@ def chiffrer():
     # Résultat fourni selon la forme initiale choisie
     # Fichier
     if choix_forme == 0:
-        texte_crypte = traiter_resultat_fichier(liste_decallee)
+        traiter_resultat_fichier(liste_decallee)
         print('Le fichier créé se nomme: chiffrement_cesar.txt')
 
     # Console
