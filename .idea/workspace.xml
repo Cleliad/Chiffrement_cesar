@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé" />
+    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="Correctif mineur (suppression d'assignation de variable globale &quot;liste_decallee&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/Chiffrement_cesar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chiffrement_cesar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -28,10 +37,13 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Cleliad/Chiffrement_cesar.git&quot;,
-    &quot;accountId&quot;: &quot;5b24cb1a-e22c-4343-9410-7a870d6421d8&quot;
+    &quot;url&quot;: &quot;https://github.com/Cleliad/Chiffrement_cesar&quot;,
+    &quot;accountId&quot;: &quot;9f276412-05c4-427a-8112-e383da482698&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -47,8 +59,8 @@
     "Python.Jeu_du_pendu_Clélia_Durandet (1).executor": "Run",
     "Python.brouillon.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Clélia/Downloads/Jeu_du_pendu_Clélia_Durandet (1).py",
+    "git-widget-placeholder": "brute__force",
+    "last_opened_file_path": "C:/Users/Adrien/Documents/MGA802/Code/Chiffrement_cesar",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -84,12 +96,50 @@
       <option name="project" value="LOCAL" />
       <updated>1716478505887</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mise au format PEP8">
+      <option name="closed" value="true" />
+      <created>1716864515816</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716864515816</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Correctif mineurs">
+      <option name="closed" value="true" />
+      <created>1716865022617</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716865022617</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Correctif mineur (suppression d'assignation de variable globale &quot;liste_decallee&quot;">
+      <option name="closed" value="true" />
+      <created>1716865266785</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716865266785</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1ère version code: travail commun en classe" />
     <MESSAGE value="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé" />
-    <option name="LAST_COMMIT_MESSAGE" value="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé" />
+    <MESSAGE value="Mise au format PEP8" />
+    <MESSAGE value="Correctif mineurs" />
+    <MESSAGE value="Correctif mineur (suppression d'assignation de variable globale &quot;liste_decallee&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correctif mineur (suppression d'assignation de variable globale &quot;liste_decallee&quot;" />
   </component>
 </project>

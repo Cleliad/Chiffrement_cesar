@@ -64,7 +64,7 @@ def traiter_resultat_fichier(liste):
 
 # FONCTION 6: DECRYPTAGE SANS CLE
 
-# a faire
+# a faire utilisation du dictionnaire français
 
 
 # FONCTION PRINCIPALE
