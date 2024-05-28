@@ -70,7 +70,7 @@ def traiter_resultat_fichier(liste):
 # FONCTION PRINCIPALE
 def chiffrer():
     # Initialisation
-    global liste_decallee
+    liste_decallee = []
     print("Tu t'appretes à utiliser un code de chiffrement basé sur la méthode de César")
     choix_forme = int(input('Veux-tu utiliser un fichier (tape 0) ou écrire le message dans la console (tape 1): '))
 
