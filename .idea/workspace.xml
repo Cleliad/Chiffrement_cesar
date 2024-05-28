@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé" />
+    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chiffrement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chiffrement.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +51,7 @@
     "Python.brouillon.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Clélia/Downloads/Jeu_du_pendu_Clélia_Durandet (1).py",
+    "last_opened_file_path": "C:/Users/Clélia/Desktop/COURS ETS/Session E24/MGA802/Pycharm/Jeu_du_pendu_Clélia_Durandet",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -84,8 +87,27 @@
       <option name="project" value="LOCAL" />
       <updated>1716478505887</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé">
+      <option name="closed" value="true" />
+      <created>1716478547542</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716478547542</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1ère version code: travail commun en classe" />
