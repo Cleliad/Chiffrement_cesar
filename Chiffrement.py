@@ -30,6 +30,9 @@ def lire_fichier():
 
 # FONCTION 2: ÉCRIRE DANS LA CONSOLE
 def ecrire_console():
+    print(""
+          ""
+          "")
     texte_string = input('Ecrivez la phrase/texte à coder: ')
     texte_minuscule = texte_string.lower()
     liste_caracteres = list(texte_minuscule)
@@ -66,13 +69,32 @@ def traiter_resultat_fichier(liste):
 
 # a faire
 
+# FONCTION 7: CHIFFRER A NOUVEAU
+def chiffrer_a_nouveau():
+    print(''
+          '')
+    print('As-tu autre chose à chiffrer?')
+    choix = input('Répondre: oui ou non ')
+    if choix == 'oui':
+        chiffrer() # appel récurrent de la fonction
+        return True
+    else:
+        print('A BIENTOT')
+        return False
+
 
 # FONCTION PRINCIPALE
 def chiffrer():
     # Initialisation
     liste_decallee = []
-    print("Tu t'appretes à utiliser un code de chiffrement basé sur la méthode de César")
-    choix_forme = int(input('Veux-tu utiliser un fichier (tape 0) ou écrire le message dans la console (tape 1): '))
+    print("****************************************************************************** "
+          "\nTu t'appretes à utiliser un code de chiffrement basé sur la méthode de César"
+          "\n******************************************************************************")
+    print(''
+          ''
+          ''
+          '')
+    choix_forme = int(input('→ Veux-tu utiliser un fichier (tape 0) ou écrire le message dans la console (tape 1): '))
 
     # Choix de la forme du texte:
     # Fichier
@@ -84,11 +106,18 @@ def chiffrer():
         liste_caracteres = ecrire_console()
 
     # Choix: encryptage ou décryptage
-    choix_action = int(input('Veux-tu encrypter (tape 0) ou décrypter un message (tape 1): '))
+    print(''
+          ''
+          ''
+          '')
+    choix_action = int(input('→ Veux-tu encrypter (tape 0) ou décrypter un message (tape 1): '))
 
     # Encryptage (avec clé connue)
     if choix_action == 0:
-        cle = int(input('entrez la valeur de la clé (positive ou négative): '))
+        print(""
+              ""
+              "")
+        cle = int(input('→ 🔑 Entrez la valeur de la clé (positive ou négative): '))
         liste_decallee = decaller_lettres(liste_caracteres, cle)
 
     # Décryptage (avec clé connue ou non)
@@ -97,7 +126,10 @@ def chiffrer():
 
         # Avec clé connue
         if choix_cle == 'oui':
-            cle = int(input('entrez la valeur de la clé (positive ou négative): '))
+            print(""
+                  ""
+                  "")
+            cle = int(input(' 🔑 Entrez la valeur de la clé (positive ou négative): '))
             cle = -cle
             liste_decallee = decaller_lettres(liste_caracteres, cle)
 
@@ -114,8 +146,11 @@ def chiffrer():
     # Console
     else:
         texte_crypte = traiter_resultat_console(liste_decallee)
+        print(""
+              ""
+              "")
         print('Le texte encrypté avec la clé donnée est:', texte_crypte)
-
+    chiffrer_a_nouveau()
 
 # Appel fonction principale
 chiffrer()
