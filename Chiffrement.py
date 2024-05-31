@@ -41,14 +41,16 @@ def ecrire_console():
 
 # FONCTION 3: DÉCALLER LES LETTRES SELON LA CLÉ (positive ou négative)
 def decaller_lettres(liste, cle):
+    liste_result = []
     for i in range(len(liste)):
         if liste[i] in alphabet:
             indice = alphabet.find(liste[i]) + cle + 26
             indice %= 26
-            liste[i] = alphabet[indice]
+            liste_result.append(alphabet[indice])
         else:
+            liste_result.append(liste[i])
             continue
-    return liste
+    return liste_result
 
 
 # FONCTION 4: RETOURNE LE RESULTAT DU CHIFFREMENT DANS LA CONSOLE
@@ -65,11 +67,33 @@ def traiter_resultat_fichier(liste):
     fichier_creer.close()
 
 
-# FONCTION 6: DECRYPTAGE SANS CLE
+# FONCTION 6: PASSER LE DICTIONNAIRE EN LISTE DE MOTS
+def passer_dictionnaire_en_liste():
+    with open('dictionnaire_francais.txt', "r", encoding='utf-8') as text_file:
+        lines = text_file.read().split()
+    return lines
 
-# a faire
 
-# FONCTION 7: CHIFFRER A NOUVEAU
+# FONCTION 7: DECRYPTAGE SANS CLE (méthode brute_force)
+def decrypter_sans_cle(liste_caracteres, liste_dictionnaire):
+    print("Nous allons tenter de déchiffrer votre message. Cette procédure peut prendre quelques instants.")
+    cle = 1
+    while cle < 27:
+        liste_decallee = decaller_lettres(liste_caracteres, cle)
+        liste_mots_decallee = ''.join(map(str, liste_decallee)).split(' ')
+        for mot in liste_mots_decallee:
+            if mot in liste_dictionnaire and len(mot) >= 4:
+                cle_trouve = cle + 26
+                cle_trouve %= 26
+                texte_trouve = ' '.join(map(str, liste_mots_decallee))
+                print('La clé trouvée est:', 26 - cle_trouve, 'et le texte crypté est:', texte_trouve)
+                essai = str(input('Est-ce bien votre texte (oui ou non) ?'))
+                if essai == 'non':
+                    continue
+                return cle_trouve
+        cle += 1
+
+# FONCTION 8: CHIFFRER A NOUVEAU
 def chiffrer_a_nouveau():
     print(''
           '')
@@ -134,8 +158,10 @@ def chiffrer():
             liste_decallee = decaller_lettres(liste_caracteres, cle)
 
         # Décryptage sans clé
-        else:
-            print('programme pas encore codé')
+        if choix_cle == 'non':
+            liste_dictionnaire = passer_dictionnaire_en_liste()
+            cle_trouve = decrypter_sans_cle(liste_caracteres, liste_dictionnaire)
+            liste_decallee = decaller_lettres(liste_caracteres, cle_trouve)
 
     # Résultat fourni selon la forme initiale choisie
     # Fichier
@@ -150,6 +176,8 @@ def chiffrer():
               ""
               "")
         print('Le texte encrypté avec la clé donnée est:', texte_crypte)
+
+    # Retour au choix utilisateur
     chiffrer_a_nouveau()
 
 # Appel fonction principale
