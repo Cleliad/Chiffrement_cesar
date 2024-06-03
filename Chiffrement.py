@@ -17,7 +17,8 @@ alphabet = string.ascii_lowercase
 def lire_fichier():
     while True:
         try:
-            chemin_acces = input('Entrez le chemin d accès de votre fichier: ')
+            print("Le chemin d'accès doit être de la forme 'C\...\...\mon_texte.txt'")
+            chemin_acces = input("Entrez le chemin d'accès de votre fichier: ")
             fichier = open(chemin_acces, 'r', encoding='utf-8')
             texte_string = fichier.read()
             texte_minuscule = texte_string.lower()
@@ -88,10 +89,30 @@ def decrypter_sans_cle(liste_caracteres, liste_dictionnaire):
     while cle < 27:
         liste_decallee = decaller_lettres(liste_caracteres, cle)
         liste_mots_decallee = ''.join(map(str, liste_decallee)).split(' ')
+
+        # Cette séquence permet de séparer le dernier mot d'un éventuel élément de ponctuation qui y serait attaché.
+        # (exemple : test.), cela permet de pouvoir rechercher le dernier mot car sinon il n'est pas reconnu dans le
+        # dictionnaire.
+        dernier_mot = liste_mots_decallee[-1]
+        if dernier_mot.endswith('.') or dernier_mot.endswith('!') or dernier_mot.endswith('?') or dernier_mot.endswith(
+                ':') or dernier_mot.endswith(';'):
+            mot_sans_point = dernier_mot[:-1]
+            point = dernier_mot[-1]
+            liste_mots_decallee[-1] = mot_sans_point
+            liste_mots_decallee.append(point)
+
+        print(liste_mots_decallee)
         for mot in liste_mots_decallee:
             if mot in liste_dictionnaire and len(mot) >= 4:
                 cle_trouve = cle + 26
                 cle_trouve %= 26
+
+                # Cette boucle if permet de rassembler le dernier mot et le dernier élément de ponctuation (si il y
+                # en a un)
+                if liste_mots_decallee[-1] == '.' or liste_mots_decallee[-1] == '!' or liste_mots_decallee[-1] == '?' \
+                        or liste_mots_decallee[-1] == ':' or liste_mots_decallee[-1] == ';':
+                    liste_mots_decallee[-2:] = [''.join(liste_mots_decallee[-2:])]
+
                 texte_trouve = ' '.join(map(str, liste_mots_decallee))
                 print('La clé trouvée est:', 26 - cle_trouve, 'et le texte crypté est:', texte_trouve)
                 essai = str(input('Est-ce bien votre texte (oui ou non) ?'))
@@ -105,7 +126,7 @@ def decrypter_sans_cle(liste_caracteres, liste_dictionnaire):
 # FONCTION 8: CHIFFRER A NOUVEAU
 def chiffrer_a_nouveau():
     print("\n\n")
-    print('As-tu autre chose à chiffrer?')
+    print('As-tu autre chose à chiffrer ou déchiffrer?')
     choix = input('Répondre: oui ou non ')
     if choix == 'oui':
         chiffrer()  # appel récurrent de la fonction
@@ -187,7 +208,7 @@ def chiffrer():
     # Fichier
     if choix_forme == 0:
         traiter_resultat_fichier(liste_decallee)
-        print('Le fichier créé se nomme: chiffrement_cesar.txt')
+        print('Le fichier créé se nomme: chiffrement_cesar.txt et se situe dans le dossier de ce script.')
 
     # Console
     else:
