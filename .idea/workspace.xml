@@ -29,12 +29,12 @@
     &quot;assignee&quot;: &quot;Cleliad&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Cleliad/Chiffrement_cesar.git&quot;,
-    &quot;accountId&quot;: &quot;5b24cb1a-e22c-4343-9410-7a870d6421d8&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Cleliad/Chiffrement_cesar",
+    "accountId": "9f276412-05c4-427a-8112-e383da482698"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -44,17 +44,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Chiffrement.executor": "Run",
-    "Python.Jeu_du_pendu_Clélia_Durandet (1).executor": "Run",
-    "Python.brouillon.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Clélia/Desktop/COURS ETS/Session E24/MGA802/Pycharm/Jeu_du_pendu_Clélia_Durandet",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Chiffrement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Jeu_du_pendu_Clélia_Durandet (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.brouillon.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Clélia/Desktop/COURS ETS/Session E24/MGA802/Pycharm/Jeu_du_pendu_Clélia_Durandet&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
