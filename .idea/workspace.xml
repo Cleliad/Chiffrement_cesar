@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="Correctifs mineurs et début de mise en forme finale">
+    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="Correction d'une erreur : si le dernier mot a un élément de ponctuation et qu'il est le seul de plus de 4 lettres, le script renvoie rien car le mot n'est pas reconnu dans le dictionnaire à cause de l'élément de ponctuation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chiffrement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chiffrement.py" afterDir="false" />
     </list>
@@ -103,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717443693492</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Correction d'une erreur : si le dernier mot a un élément de ponctuation et qu'il est le seul de plus de 4 lettres, le script renvoie rien car le mot n'est pas reconnu dans le dictionnaire à cause de l'élément de ponctuation.">
+      <option name="closed" value="true" />
+      <created>1717446142373</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717446142373</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +129,7 @@
     <MESSAGE value="1ère version code: travail commun en classe" />
     <MESSAGE value="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé" />
     <MESSAGE value="Correctifs mineurs et début de mise en forme finale" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correctifs mineurs et début de mise en forme finale" />
+    <MESSAGE value="Correction d'une erreur : si le dernier mot a un élément de ponctuation et qu'il est le seul de plus de 4 lettres, le script renvoie rien car le mot n'est pas reconnu dans le dictionnaire à cause de l'élément de ponctuation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction d'une erreur : si le dernier mot a un élément de ponctuation et qu'il est le seul de plus de 4 lettres, le script renvoie rien car le mot n'est pas reconnu dans le dictionnaire à cause de l'élément de ponctuation." />
   </component>
 </project>

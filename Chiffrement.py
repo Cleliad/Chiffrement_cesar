@@ -22,7 +22,6 @@ def lire_fichier():
             fichier = open(chemin_acces, 'r', encoding='utf-8')
             texte_string = fichier.read()
             texte_minuscule = texte_string.lower()
-            print(texte_minuscule)
             liste_caracteres = list(texte_minuscule)
             break
         except FileNotFoundError:  # message d'erreur si le fichier n'est pas trouvé
@@ -31,11 +30,9 @@ def lire_fichier():
 
 
 # ====================================================================================
-# FONCTION 2: ÉCRIRE DANS LA CONSOLE
+# FONCTION 2: ÉCRIRE LE MESSAGE DANS LA CONSOLE
 def ecrire_console():
-    print(""
-          ""
-          "")
+    print("\n\n")
     texte_string = input('Ecrivez la phrase/texte à coder: ')
     texte_minuscule = texte_string.lower()
     liste_caracteres = list(texte_minuscule)
@@ -101,9 +98,10 @@ def decrypter_sans_cle(liste_caracteres, liste_dictionnaire):
             liste_mots_decallee[-1] = mot_sans_point
             liste_mots_decallee.append(point)
 
-        print(liste_mots_decallee)
+        # Il faut qu'un mot du message (modifié avec la clé) de 3 lettres ou plus corresponde avec un mot du
+        # dictionnaire français pour pouvoir dire si la clé est bonne ou non.
         for mot in liste_mots_decallee:
-            if mot in liste_dictionnaire and len(mot) >= 4:
+            if mot in liste_dictionnaire and len(mot) >= 3:
                 cle_trouve = cle + 26
                 cle_trouve %= 26
 
@@ -120,6 +118,10 @@ def decrypter_sans_cle(liste_caracteres, liste_dictionnaire):
                     continue
                 return cle_trouve
         cle += 1
+
+    print(
+        "Désolé, nous avons testé toutes les clés possible (26) et aucun des mots du texte ne semble correspondre "
+        "avec un mot du dictionnaire français.")
 
 
 # ====================================================================================
@@ -142,12 +144,14 @@ def chiffrer():
     # Initialisation
     liste_decallee = []
     print("****************************************************************************** "
-          "\nTu t'appretes à utiliser un code de chiffrement basé sur la méthode de César"
+          "\nTu t'apprêtes à utiliser un code de chiffrement basé sur la méthode de César"
           "\n******************************************************************************")
-    print("\n\n\n\n")
+    print("\n")
 
     while True:
         try:
+            print("Le message que tu vas écrire devra forcément posséder un mot d'au moins 3 lettres pour pouvoir être "
+                  "décrypter.")
             choix_forme = int(input('→ Veux-tu utiliser un fichier (tape 0) ou écrire le message dans la console ('
                                     'tape 1): '))
             if choix_forme == 1 or choix_forme == 0:
@@ -165,7 +169,7 @@ def chiffrer():
         liste_caracteres = ecrire_console()
 
     # Choix: encryptage ou décryptage
-    print("\n\n\n\n")
+    print("\n\n")
     while True:
         try:
             choix_action = int(input('→ Veux-tu encrypter (tape 0) ou décrypter un message (tape 1): '))
@@ -176,7 +180,7 @@ def chiffrer():
 
     # Encryptage (avec clé connue)
     if choix_action == 0:
-        print("\n\n\n\n")
+        print("\n\n")
         while True:
             try:
                 cle = int(input('→ 🔑 Entrez la valeur de la clé (positive ou négative): '))
@@ -193,7 +197,7 @@ def chiffrer():
 
         # Avec clé connue
         if choix_cle == 'oui':
-            print("\n\n\n\n")
+            print("\n\n")
             cle = int(input(' 🔑 Entrez la valeur de la clé (positive ou négative): '))
             cle = -cle
             liste_decallee = decaller_lettres(liste_caracteres, cle)
@@ -213,7 +217,7 @@ def chiffrer():
     # Console
     else:
         texte_crypte = traiter_resultat_console(liste_decallee)
-        print("\n\n\n\n")
+        print("\n\n")
         print('Le texte encrypté (ou décrypté) avec la clé donnée est:', texte_crypte)
 
     # Retour au choix utilisateur
