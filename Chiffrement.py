@@ -5,19 +5,16 @@
 # ====================================================================================
 
 import string
-
 alphabet = string.ascii_lowercase
 
 
-# alphabet.find('t') # Renvoie l’index (position) de la lettre t dans l’alphabet
-# new_character = alphabet[8] # Renvoie la lettre de l’alphabet qui a pour index 8
-
 # ====================================================================================
 # FONCTION 1: LIRE LE FICHIER TEXTE ET METTRE SOUS FORME DE LISTE DE CARACTERES
+
 def lire_fichier():
     while True:
         try:
-            print("Le chemin d'accès doit être de la forme 'C\...\...\mon_texte.txt'")
+            print("Le chemin d'accès doit être de la forme 'C\\...\\...\\mon_texte.txt'")
             chemin_acces = input("Entrez le chemin d'accès de votre fichier: ")
             fichier = open(chemin_acces, 'r', encoding='utf-8')
             texte_string = fichier.read()
@@ -151,7 +148,7 @@ def chiffrer():
     while True:
         try:
             print("Le message que tu vas écrire devra forcément posséder un mot d'au moins 3 lettres pour pouvoir être "
-                  "décrypter.")
+                  "décrypté, et en français.")
             choix_forme = int(input('→ Veux-tu utiliser un fichier (tape 0) ou écrire le message dans la console ('
                                     'tape 1): '))
             if choix_forme == 1 or choix_forme == 0:
