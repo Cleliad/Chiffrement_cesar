@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="Correction d'une erreur : si le dernier mot a un élément de ponctuation et qu'il est le seul de plus de 4 lettres, le script renvoie rien car le mot n'est pas reconnu dans le dictionnaire à cause de l'élément de ponctuation.">
+    <list default="true" id="df10c4a5-7d87-4f57-bedb-3848478f9816" name="Changes" comment="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé">
+      <change beforePath="$PROJECT_DIR$/.idea/Chiffrement_cesar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chiffrement_cesar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chiffrement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chiffrement.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +30,12 @@
     &quot;assignee&quot;: &quot;Cleliad&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Cleliad/Chiffrement_cesar",
-    "accountId": "9f276412-05c4-427a-8112-e383da482698"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Cleliad/Chiffrement_cesar.git&quot;,
+    &quot;accountId&quot;: &quot;5b24cb1a-e22c-4343-9410-7a870d6421d8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -95,23 +96,7 @@
       <option name="project" value="LOCAL" />
       <updated>1716478547542</updated>
     </task>
-    <task id="LOCAL-00004" summary="Correctifs mineurs et début de mise en forme finale">
-      <option name="closed" value="true" />
-      <created>1717443693492</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1717443693492</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Correction d'une erreur : si le dernier mot a un élément de ponctuation et qu'il est le seul de plus de 4 lettres, le script renvoie rien car le mot n'est pas reconnu dans le dictionnaire à cause de l'élément de ponctuation.">
-      <option name="closed" value="true" />
-      <created>1717446142373</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1717446142373</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,8 +113,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1ère version code: travail commun en classe" />
     <MESSAGE value="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé" />
-    <MESSAGE value="Correctifs mineurs et début de mise en forme finale" />
-    <MESSAGE value="Correction d'une erreur : si le dernier mot a un élément de ponctuation et qu'il est le seul de plus de 4 lettres, le script renvoie rien car le mot n'est pas reconnu dans le dictionnaire à cause de l'élément de ponctuation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction d'une erreur : si le dernier mot a un élément de ponctuation et qu'il est le seul de plus de 4 lettres, le script renvoie rien car le mot n'est pas reconnu dans le dictionnaire à cause de l'élément de ponctuation." />
+    <option name="LAST_COMMIT_MESSAGE" value="2ème version: fonction principale fonctionnelle, il reste à mettre en place le décryptage sans clé" />
   </component>
 </project>
