@@ -216,7 +216,8 @@ def chiffrer():
     else:
         texte_crypte = traiter_resultat_console(liste_decallee)
         print("\n\n")
-        print('Le texte encrypté (ou décrypté) avec la clé donnée est:', texte_crypte)
+        print('-'*50, 'RESULTAT', '-'*50)
+        print('\n', 'Le texte encrypté (ou décrypté) avec la clé donnée est:', texte_crypte, '\n', '-'*110)
 
     # Retour au choix utilisateur
     chiffrer_a_nouveau()
