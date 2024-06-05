@@ -1,6 +1,6 @@
 # ====================================================================================
 # Author : Groupe 8
-# Date : 2024/05/23
+# Date : 2024/06/05
 # PROGRAMME: CHIFFREMENT CESAR
 # ====================================================================================
 
@@ -109,7 +109,7 @@ def decrypter_sans_cle(liste_caracteres, liste_dictionnaire):
                     liste_mots_decallee[-2:] = [''.join(liste_mots_decallee[-2:])]
 
                 texte_trouve = ' '.join(map(str, liste_mots_decallee))
-                print('La clé trouvée est:', 26 - cle_trouve, 'et le texte crypté est:', texte_trouve)
+                print('\nLa clé trouvée est:', 26 - cle_trouve, 'et le texte crypté est:', texte_trouve)
                 essai = str(input('Est-ce bien votre texte (oui ou non) ?'))
                 if essai == 'non':
                     continue
@@ -125,13 +125,13 @@ def decrypter_sans_cle(liste_caracteres, liste_dictionnaire):
 # FONCTION 8: CHIFFRER A NOUVEAU
 def chiffrer_a_nouveau():
     print("\n\n")
-    print('As-tu autre chose à chiffrer ou déchiffrer?')
+    print('As-tu autre chose à chiffrer ou déchiffrer?\n')
     choix = input('Répondre: oui ou non ')
     if choix == 'oui':
         chiffrer()  # appel récurrent de la fonction
         return True
     else:
-        print('A BIENTOT')
+        print('\nA BIENTOT')
         return False
 
 
@@ -147,8 +147,9 @@ def chiffrer():
 
     while True:
         try:
-            print("Le message que tu vas écrire devra forcément posséder un mot d'au moins 3 lettres pour pouvoir être "
-                  "décrypté, et en français.")
+            print("Consignes: Le message à coder/décoder devra forcément être en français "
+                  "et posséder un nom commun d'au moins 3 lettres pour pouvoir être "
+                  "décrypté.\n")
             choix_forme = int(input('→ Veux-tu utiliser un fichier (tape 0) ou écrire le message dans la console ('
                                     'tape 1): '))
             if choix_forme == 1 or choix_forme == 0:
