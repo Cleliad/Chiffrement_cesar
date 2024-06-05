@@ -33,37 +33,37 @@ Récupère le texte à coder dans la console et retourne une liste de caractère
 
 
 **decaller_lettres(liste,cle) :**
-fonction qui permet d'encripter le texte selon la clé de criptage qui est demandée
+Permet d'encripter le texte selon la clé de criptage qui est demandée
 - *Entrée : liste (liste des caractères du texte à traiter), cle (clé de codage pour le criptage)*
 - *Sortie : liste_result (liste de caractères du texte encodé)*
 
 
 **traiter_resultat_console(liste) :**
-concatene la liste de caractère en entrée et retroune un texte *(string)*. 
+Concatene la liste de caractère en entrée et retroune un texte *(string)*. 
 - *Entrée : liste (liste des caractères du texte à traiter)*
 - *Sortie : resultat (texte concatené en str)*
 
 
 **passer_dictionnaire_en_liste() :**
-ouvre le fichier texte *'dictionnaire_francais.txt'* présent en annexe du code et créer une liste contenant l'ensemble des mots du fichier. 
+Ouvre le fichier texte *'dictionnaire_francais.txt'* présent en annexe du code et créer une liste contenant l'ensemble des mots du fichier. 
 - *Entrée : va chercher 'dictionnaire_francais.txt' dans le dossier du fichier python*
 - *Sortie : lines (tableau contenant l'ensemble des mots contenus dans le fichier)*
 
 
 **traiter_resultat_fichier(liste) :**
-concatene la liste de caractère en entrée et crée un nouveau fichier avec le texte concatené. 
+Concatene la liste de caractère en entrée et crée un nouveau fichier avec le texte concatené. 
 - *Entrée : liste (liste des caractères du texte à traiter)*
 - *Sortie : (texte concatené en dans un nouveau fichier)*
 
 
 **decripter_sans_cle() :**
-fonction qui part du fichier encodé et va tester des encodages successifs par incrément d'un jusqu'à ce qu'un mot du dictionnaire français soit trouvé dans le texte décodé. Alors la fonction retourne la clé de décodage.
+Fonction qui part du fichier encodé et va tester des encodages successifs par incrément d'un jusqu'à ce qu'un mot du dictionnaire français soit trouvé dans le texte décodé. Alors la fonction retourne la clé de décodage. Les mots testés font au minimum trois lettres.
 Si aucune clé ne semble fonctionner la fonction retourne un message d'excuse et des explications. 
 - *Entrée : liste_caractères (liste des caractères du texte à traiter), liste_dictionnaire (liste des mots du dictionnaire fournis par la fonction passer_dictionnaire_en_liste())*
 - *Sortie : (texte concatené en dans un nouveau fichier)*
 
 **chiffrer_a_nouveau() :**
-fonction qui relance le code si l'utilisateur souhaite coder/décoder un nouveau texte/fichier. La fonction fait appel à chiffrer pour relancer le code.
+Fonction qui relance le code si l'utilisateur souhaite coder/décoder un nouveau texte/fichier. La fonction fait appel à chiffrer pour relancer le code.
 - *Entrée : input de réponse de l'utilisateur*
 - *Sortie :*
    - si reponse == 'oui' *relance la fonction chiffrer()*
@@ -71,7 +71,7 @@ fonction qui relance le code si l'utilisateur souhaite coder/décoder un nouveau
 
 
 **chiffrer() :**
-fonction principale qui fait appel à l'ensemble des fonctions décrites précédement afin de répondre au besoin de l'utilisateur.
+Fonction principale qui fait appel à l'ensemble des fonctions décrites précédement afin de répondre au besoin de l'utilisateur.
 - *Entrée : input de réponse de l'utilisateur*
 - *Sortie :*
    - si reponse == 'oui' *relance la fonction chiffrer()*
@@ -89,14 +89,14 @@ Fait appel à :
 - **chiffrer_a_nouveau()**
 
 Selon les inputs de l'utilisateur la fonction principale fera appel à une suite de fonction permettant :
-- _cripter_ ou _décripter_ :
+- _crypter_ ou _décrypter_ :
    - un _fichier .txt_ donné par l'utilisateur et d'écrire un _nouveau fichier .txt_
    - une _entrée string dans la console_ et _imprimer la réponse dans la console_
-- _décripter un fichier sans clé_ pour les deux cas précédents
+- _décrypter un fichier sans clé_ pour les deux cas précédents
 
 PS: *La fonction va également proposer de traiter un nouveau texte après une utilisation.* 
 
 
 **Autre :**
 *alphabet* est une variable globale contenant les 26 caractères de l'alphabet français. 
-- Appelé dans : **decaller_lettres**
+- Appelée dans : **decaller_lettres**
