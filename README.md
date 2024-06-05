@@ -100,3 +100,8 @@ PS: *La fonction va également proposer de traiter un nouveau texte après une u
 **Autre :**
 *alphabet* est une variable globale contenant les 26 caractères de l'alphabet français. 
 - Appelée dans : **decaller_lettres**
+
+## Utilisation du code:
+Il suffit de lancer le programme, cela fera appel à la fonction chiffrer(), puis suivre les instructions de la console. 
+
+Consignes: le code ne fonctionne que si le texte à code/décoder est en langue française et possède au moins un nom commun de 3 lettres ou plus
